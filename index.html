@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                animationEnabled: true,
+                title: {
+                    text: "Military Expenditure of Countries: 2016"
+                },
+                zoomEnabled: true,
+                axisX: {
+                    interval: 1
+                },
+                axisY: {
+                    title: "Expenses in Billion Dollars",
+                    includeZero: true,
+                    scaleBreaks: {
+                        autoCalculate: true  // change to false
+                    },
+                },
+                dataPointWidth: 10,
+                data: [{
+                    type: "bar",
+                    dataPoints: [
+                        ${tpl}
+                    ]
+                }]
+            });
+            chart.render();
+        }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 100%; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>

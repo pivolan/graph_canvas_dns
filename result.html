@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script>
+        window.onload = function () {
+
+            var chart = new CanvasJS.Chart("chartContainer", {
+                title: {
+                    text: "Hosting popularity rating by domains parked",
+                    fontSize: 15
+                },
+                zoomEnabled: true,
+
+                axisX: {
+                    interval: 1,
+                    labelFontSize: 12
+                },
+                axisY: {
+                    includeZero: true,
+                    labelFontSize: 12,
+                    scaleBreaks: {
+                        autoCalculate: true  // change to false
+                    },
+                },
+                options: {
+                    responsive: false
+                },
+                dataPointWidth: 10,
+                data: [{
+                    type: "bar",
+                    dataPoints: [
+                        {label: "HWFS.RU", y: 3298},
+                        {label: "FULLSPACE.RU", y: 3301},
+                        {label: "AGAVA.RU", y: 3336},
+                        {label: "CLOUDNS.NET", y: 3361},
+                        {label: "MTW.RU", y: 3395},
+                        {label: "RUWEB.NET", y: 3536},
+                        {label: "VSCALE.IO", y: 3639},
+                        {label: "VIGBO.COM", y: 3736},
+                        {label: "EXPIRED.BEGET.COM", y: 3784},
+                        {label: "NSKA.NET", y: 3858},
+                        {label: "ADMINVPS.RU", y: 3929},
+                        {label: "SMARTAPE.RU", y: 4022},
+                        {label: "HOSTLINE.RU", y: 4161},
+                        {label: "STORELAND.RU", y: 4275},
+                        {label: "NETFOX.RU", y: 4281},
+                        {label: "FRIENDDNS.INFO", y: 4578},
+                        {label: "ISPVDS.COM", y: 4607},
+                        {label: "PARKINGCREW.NET", y: 4672},
+                        {label: "HOSTIMAN.RU", y: 4715},
+                        {label: "MULTIHOST.RU", y: 4723},
+                        {label: "ZOMRO.NET", y: 5007},
+                        {label: "DOMAINPAGE.RU", y: 5184},
+                        {label: "RSNX.RU", y: 5234},
+                        {label: "FLEXBE.COM", y: 5495},
+                        {label: "HOSTIA.NAME", y: 5504},
+                        {label: "SITE.SU", y: 5757},
+                        {label: "FORNEX.COM", y: 5913},
+                        {label: "PROMDNS.NET", y: 6143},
+                        {label: "PA.INFOBOX.RU", y: 6163},
+                        {label: "SETUP.RU", y: 6260},
+                        {label: "DOMAINSELLER.RU", y: 6449},
+                        {label: "ENS.MAIL.RU", y: 6627},
+                        {label: "DNS-RUS.NET", y: 6840},
+                        {label: "INHOSTEDNS.COM", y: 7017},
+                        {label: "RU-TLD.RU", y: 7116},
+                        {label: "AGAVA.NET.RU", y: 7245},
+                        {label: "VALUEHOST.RU", y: 7379},
+                        {label: "MASTERNAME.RU", y: 7473},
+                        {label: "INSALES.RU", y: 7493},
+                        {label: "DOMAINER.BIZ", y: 7606},
+                        {label: "DIGITALOCEAN.COM", y: 7607},
+                        {label: "EUROBYTE.RU", y: 8110},
+                        {label: "ROCKET.NAME", y: 8282},
+                        {label: "PETERHOST.RU", y: 8295},
+                        {label: "INFOBOX.ORG", y: 8339},
+                        {label: "HOSTINGER.RU", y: 8362},
+                        {label: "NS3-FWL2.NIC.RU", y: 8424},
+                        {label: "HOSTER.RU", y: 8722},
+                        {label: "ZENON.NET", y: 8802},
+                        {label: "EXPIRED.R01.RU", y: 8832},
+                        {label: "YANDEX.RU", y: 9163},
+                        {label: "UKIT.COM", y: 9503},
+                        {label: "LPMOTOR.RU", y: 9751},
+                        {label: "DOMAINCONTROL.COM", y: 9774},
+                        {label: "REGISTRANT.RU", y: 10286},
+                        {label: "UCOZ.NET", y: 10765},
+                        {label: "MAROSNET.RU", y: 11377},
+                        {label: "SNPARKING.RU", y: 11825},
+                        {label: "NAUNET.RU", y: 11856},
+                        {label: "FOZZY.COM", y: 11897},
+                        {label: "SELECTEL.ORG", y: 12824},
+                        {label: "NETHOUSE.RU", y: 14588},
+                        {label: "HT-SYSTEMS.RU", y: 16052},
+                        {label: "PLATFORMALP.RU", y: 16754},
+                        {label: "EXPIRING.SALENAMES.RU", y: 19334},
+                        {label: "WEBHOST1.RU", y: 19925},
+                        {label: "MAJORDOMO.RU", y: 21765},
+                        {label: "1GB.RU", y: 22253},
+                        {label: "NETANGELS.RU", y: 23652},
+                        {label: "HC.RU", y: 23966},
+                        {label: "FM.NIC.RU", y: 24185},
+                        {label: "FASTDNS24.COM", y: 26293},
+                        {label: "WIXDNS.NET", y: 27161},
+                        {label: "MCHOST.RU", y: 27283},
+                        {label: "MEGAGROUP.RU", y: 33521},
+                        {label: "HOSTLAND.RU", y: 33809},
+                        {label: "SHOP.REG.RU", y: 34224},
+                        {label: "FIRSTVDS.RU", y: 37563},
+                        {label: "IN NS", y: 39993},
+                        {label: "NAMESELF.COM", y: 40441},
+                        {label: "POISHI.COM", y: 41822},
+                        {label: "SPRINTHOST.RU", y: 42466},
+                        {label: "IHC.RU", y: 49710},
+                        {label: "EXPIRED.REG.RU", y: 50675},
+                        {label: "R01.RU", y: 53407},
+                        {label: "PRIVATEPERSON.RU", y: 58266},
+                        {label: "NS3-L2.NIC.RU", y: 58537},
+                        {label: "BEGET.RU", y: 59330},
+                        {label: "MASTERHOST.RU", y: 63137},
+                        {label: "DOMAINPARKING.RU", y: 65230},
+                        {label: "SPACEWEB.RU", y: 73959},
+                        {label: "JINO.RU", y: 83298},
+                        {label: "YANDEX.NET", y: 98281},
+                        {label: "NS.CLOUDFLARE.COM", y: 117021},
+                        {label: "NIC.RU", y: 150642},
+                        {label: "HOSTING.REG.RU", y: 151239},
+                        {label: "BEGET.COM", y: 172965},
+                        {label: "SALENAMES.RU", y: 174726},
+                        {label: "TIMEWEB.RU", y: 184997},
+                        {label: "REG.RU", y: 319579}
+                    ]
+                }]
+            });
+            chart.render();
+        }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 100%; width: 100%;position: absolute"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
